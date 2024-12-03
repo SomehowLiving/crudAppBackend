@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://shinchan:CAZHh0FgQ5TMgQNV@database.tr3ql.mongodb.net/Node-API?retryWrites=true&w=majority&appName=database"
+    MONGO_URL
   )
   .then(() => {
     console.log("connected to the database");
